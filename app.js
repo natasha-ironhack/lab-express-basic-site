@@ -25,4 +25,8 @@ app.get("/works", (request, response, next) => {
   response.sendFile(__dirname + "/views/works.html");
 });
 
+app.get("/photos", (request, response, next) => {
+  response.sendFile(__dirname + "/views/photos.html");
+});
+
 app.listen(8000, () => console.log("Im listening on port 8000!"));
