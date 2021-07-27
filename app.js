@@ -11,7 +11,7 @@ app.get("/", (request, response, next) => {
 
 // http://localhost:8080/home
 //the /home leads to the about page here
-app.get("/home", (request, response, next) => {
+app.get("/about", (request, response, next) => {
   response.sendFile(__dirname + "/views/about.html");
 });
 
